@@ -1,6 +1,12 @@
 require("dotenv").config();
 const express = require("express");
-const cors = require("cors");
+app.use(cors({
+  origin: [
+    'mpesatest.vercel.app',
+    'http://localhost:5173'
+  ],
+  credentials: true
+}));
 
 const { connectDB } = require("./src/config/db");
 console.log("DEBUG: About to load mpesaRoutes...");
