@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 
-const API_BASE = 'http://localhost:5000/api/mpesa';
+const API_BASE = 'https://mpesatest-0sa1.onrender.com/api/mpesa';
 
 function App() {
   const [amount, setAmount] = useState('1');
